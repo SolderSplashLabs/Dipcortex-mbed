@@ -11,7 +11,7 @@ MEMORY
 {
   /* Define each memory region */
   MFlash64 (rx) : ORIGIN = 0x0, LENGTH = 0x10000 /* 64k */
-  RamLoc8 (rwx) : ORIGIN = 0x10000000, LENGTH = 0x1F40 /* Why less than 8k? */
+  RamLoc8 (rwx) : ORIGIN = 0x100000C0, LENGTH = 0x1F40 /* 8k - Space for dynamic vector table */
   RamUsb2 (rwx) : ORIGIN = 0x20004000, LENGTH = 0x800 /* 2k */
   RamPeriph2 (rwx) : ORIGIN = 0x20000000, LENGTH = 0x800 /* 2k */
 
